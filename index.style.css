@@ -1,0 +1,235 @@
+/* FONTES PERSONALIZADAS */
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+}
+
+/* RESET E GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+html, body {
+    background-image: url('imgs/background.svg');
+    color: #ffffff;
+    padding-top: 20px; /* altura da nav */
+    padding-bottom: 30px; /* altura do footer */
+}
+
+/* NAVBAR */
+nav {
+    background: #200934;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+nav .contacts {
+    color: #fff;
+}
+
+.h_btn {
+    margin-right: 2%;
+    color: #fff;
+    background-color: #592b81;
+    transition: background-color 0.3s ease;
+}
+
+.h_btn:hover {
+    background-color: #431f65;
+}
+
+/* INTRODUÇÃO */
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
+
+.bloco_nm_desc {
+    background-color: #592b81;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 420px;
+}
+
+.nm {
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.desc_nm {
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+/* FOTO DE PERFIL */
+.foto-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #592b81;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* HEADER E MAIN */
+header {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+main h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* GALERIA */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.gallery-item {
+    background: #200934;
+    border-radius: 12px;
+    text-align: center;
+    padding: 50px 40px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item span {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* RODAPÉ */
+footer {
+    background: #200934;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* Esconde os contatos no nav */
+  nav .contacts {
+    display: none;
+  }
+
+  /* Ajusta o nav */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  /* Centraliza completamente o botão */
+  .h_btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    align-self: center;
+  }
+
+  /* Centraliza o texto do footer */
+  footer {
+    text-align: center;
+  }
+
+  /* Aumenta a largura da caixa de texto */
+  .bloco_nm_desc {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .desc_nm {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
