@@ -17,11 +17,14 @@
     font-family: 'Space Mono', monospace;
 }
 
-html, body {
+html,
+body {
     background-image: url('imgs/background.svg');
     color: #ffffff;
-    padding-top: 20px; /* altura da nav */
-    padding-bottom: 30px; /* altura do footer */
+    padding-top: 20px;
+    /* altura da nav */
+    padding-bottom: 30px;
+    /* altura do footer */
 }
 
 /* NAVBAR */
@@ -37,6 +40,14 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+
+.nav-links {
+    margin-right: 3%;
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+}
+
 
 nav a {
     text-decoration: none;
@@ -148,6 +159,7 @@ main p {
 }
 
 .gallery-item {
+
     background: #200934;
     border-radius: 12px;
     text-align: center;
@@ -194,43 +206,44 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Esconde os contatos no nav */
-  nav .contacts {
-    display: none;
-  }
 
-  /* Ajusta o nav */
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px;
-  }
+    /* Esconde os contatos no nav */
+    nav .contacts {
+        display: none;
+    }
 
-  /* Centraliza completamente o botão */
-  .h_btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    align-self: center;
-  }
+    /* Ajusta o nav */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+    }
 
-  /* Centraliza o texto do footer */
-  footer {
-    text-align: center;
-  }
+    /* Centraliza completamente o botão */
+    .h_btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        align-self: center;
+    }
 
-  /* Aumenta a largura da caixa de texto */
-  .bloco_nm_desc {
-    width: 90%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
+    /* Centraliza o texto do footer */
+    footer {
+        text-align: center;
+    }
 
-  .desc_nm {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    text-align: justify;
-  }
+    /* Aumenta a largura da caixa de texto */
+    .bloco_nm_desc {
+        width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .desc_nm {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
 }
