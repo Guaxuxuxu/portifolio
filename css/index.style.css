@@ -19,7 +19,7 @@
 
 html,
 body {
-    background-image: url('imgs/background.svg');
+    background-image: url('../imgs/background.svg');
     color: #ffffff;
     padding-top: 20px;
     /* altura da nav */

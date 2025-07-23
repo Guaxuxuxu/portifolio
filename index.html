@@ -9,26 +9,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.style.css">
+  <link rel="stylesheet" href="css/index.style.css">
   <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
-
 </head>
 
 <body>
   <nav>
     <div class="nav-links">
-      <a class="h_btn space-mono-bold" href="index.html">Home</a>
-      <a class="h_btn space-mono-bold" href="https://www.linkedin.com/in/guilherme-nascimento-isac-3b6144365/" target="_blank">LinkedIn</a>
-      <a class="h_btn space-mono-bold" href="in_contruction.html" target="_blank">ArtStation</a>
+      <a class="h_btn space-mono-bold" href="index.html" data-i18n="nav_home">Home</a>
+      <a class="h_btn space-mono-bold" href="https://www.linkedin.com/in/guilherme-nascimento-isac-3b6144365/"
+        target="_blank" data-i18n="nav_linkedin">LinkedIn</a>
+      <a class="h_btn space-mono-bold" href="in_contruction.html" target="_blank"
+        data-i18n="nav_artstation">ArtStation</a>
     </div>
   </nav>
 
   <main>
     <div class="intro-container">
       <div class="bloco_nm_desc space-mono-regular">
-        <h1 class="nm">Guilherme N. Isac</h1>
-        <p class="desc_nm">Olá! Meu nome é Guilherme. Trabalho de forma intermitente com UI/UX,
+        <h1 class="nm" data-i18n="intro_name">Guilherme N. Isac</h1>
+        <p class="desc_nm" data-i18n="intro_desc">Olá! Meu nome é Guilherme. Trabalho de forma intermitente com UI/UX,
           design e ilustração há mais de 3 anos.
           Este site mostra um pouco das coisas que já fiz.</p>
       </div>
@@ -41,27 +42,37 @@
       <div class="gallery-item">
         <a href="ui_ux.html">
           <img src="imgs/ui_ux_icon.svg" alt="Ícone de UI/UX Design" loading="lazy">
-          <span>UI/UX</span>
+          <span data-i18n="gallery_uiux">UI/UX</span>
         </a>
       </div>
       <div class="gallery-item">
         <a href="ilus.html">
           <img src="imgs/ilus_icon.svg" alt="Ícone de Ilustração Digital" loading="lazy">
-          <span>Ilustração</span>
+          <span data-i18n="gallery_ilus">Ilustração</span>
         </a>
       </div>
       <div class="gallery-item">
         <a href="in_contruction.html">
           <img src="imgs/des_prod_icon.svg" alt="Ícone de Design de Produto" loading="lazy">
-          <span>Design</span>
+          <span data-i18n="gallery_design">Design</span>
         </a>
       </div>
     </div>
   </main>
 
-  <footer class="space-mono-regular">
-    @xuxu_gua | (34) 9 8410-5711 | guilherme.nasc.sac@gmail.com
+  <!-- CDN scripts -->
+  <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/jquery-i18next@1.2.1/dist/umd/jquery-i18next.min.js"></script>
+
+  <!-- Seu script -->
+  <script src="js/index_i18n.js"></script>
+
+  <footer class="space-mono-regular" data-i18n="footer">
+    @xuxu_gua | +55 (34) 9 8410-5711 | guilherme.nasc.sac@gmail.com
   </footer>
+
 </body>
 
 </html>
